@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		E7A0A65A299D5E2B00B990ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A0A659299D5E2B00B990ED /* AppDelegate.swift */; };
 		E7A0A65C299D5E2B00B990ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A0A65B299D5E2B00B990ED /* SceneDelegate.swift */; };
-		E7A0A65E299D5E2B00B990ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A0A65D299D5E2B00B990ED /* ViewController.swift */; };
+		E7A0A65E299D5E2B00B990ED /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A0A65D299D5E2B00B990ED /* ImagesViewController.swift */; };
 		E7A0A661299D5E2B00B990ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7A0A65F299D5E2B00B990ED /* Main.storyboard */; };
 		E7A0A663299D5E2D00B990ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7A0A662299D5E2D00B990ED /* Assets.xcassets */; };
 		E7A0A666299D5E2D00B990ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7A0A664299D5E2D00B990ED /* LaunchScreen.storyboard */; };
+		E7A0A66E299D687500B990ED /* ImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A0A66D299D687500B990ED /* ImagesCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E7A0A656299D5E2B00B990ED /* Google Images for Hedgehog Tech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Google Images for Hedgehog Tech.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A0A659299D5E2B00B990ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7A0A65B299D5E2B00B990ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E7A0A65D299D5E2B00B990ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E7A0A65D299D5E2B00B990ED /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
 		E7A0A660299D5E2B00B990ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7A0A662299D5E2D00B990ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7A0A665299D5E2D00B990ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7A0A667299D5E2D00B990ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7A0A66D299D687500B990ED /* ImagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				E7A0A659299D5E2B00B990ED /* AppDelegate.swift */,
 				E7A0A65B299D5E2B00B990ED /* SceneDelegate.swift */,
-				E7A0A65D299D5E2B00B990ED /* ViewController.swift */,
+				E7A0A65D299D5E2B00B990ED /* ImagesViewController.swift */,
+				E7A0A66D299D687500B990ED /* ImagesCollectionViewCell.swift */,
 				E7A0A65F299D5E2B00B990ED /* Main.storyboard */,
 				E7A0A662299D5E2D00B990ED /* Assets.xcassets */,
 				E7A0A664299D5E2D00B990ED /* LaunchScreen.storyboard */,
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7A0A65E299D5E2B00B990ED /* ViewController.swift in Sources */,
+				E7A0A65E299D5E2B00B990ED /* ImagesViewController.swift in Sources */,
 				E7A0A65A299D5E2B00B990ED /* AppDelegate.swift in Sources */,
+				E7A0A66E299D687500B990ED /* ImagesCollectionViewCell.swift in Sources */,
 				E7A0A65C299D5E2B00B990ED /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,8 +297,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +305,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.philippzeppelin.Google-Images-for-Hedgehog-Tech";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,8 +327,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +335,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.philippzeppelin.Google-Images-for-Hedgehog-Tech";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
