@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EQe-KW-1PH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZQE-5w-KCt">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Images View Controller-->
+        <!--Hedgehog Tech-->
         <scene sceneID="6ne-Kt-CTO">
             <objects>
                 <collectionViewController id="sMN-L9-c01" customClass="ImagesViewController" customModule="Google_Images_for_Hedgehog_Tech" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,34 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oS8-Kf-v7c">
                             <size key="itemSize" width="170" height="170"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellIdentifier" id="jQL-LP-EYs" customClass="ImagesCollectionViewCell" customModule="Google_Images_for_Hedgehog_Tech" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                                <rect key="frame" x="10" y="10" width="170" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Dyj-pw-nx7">
                                     <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gOi-Xv-czF">
-                                            <rect key="frame" x="8" y="0.0" width="162" height="170"/>
-                                        </imageView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="gOi-Xv-czF" secondAttribute="bottom" id="Ar9-sr-peg"/>
-                                        <constraint firstAttribute="trailing" secondItem="gOi-Xv-czF" secondAttribute="trailing" id="GSR-EA-Ern"/>
-                                        <constraint firstItem="gOi-Xv-czF" firstAttribute="leading" secondItem="Dyj-pw-nx7" secondAttribute="leading" constant="8" id="RnI-Bg-IJU"/>
-                                        <constraint firstItem="gOi-Xv-czF" firstAttribute="top" secondItem="Dyj-pw-nx7" secondAttribute="top" id="v4f-eH-LbW"/>
-                                    </constraints>
                                 </collectionViewCellContentView>
                                 <connections>
                                     <outlet property="imageView" destination="Dyj-pw-nx7" id="qBO-1h-Ppo"/>
+                                    <segue destination="YO3-Pg-NMb" kind="show" id="k8e-9t-Th0"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -52,29 +42,47 @@
                             <outlet property="delegate" destination="sMN-L9-c01" id="Ebo-qf-65L"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="u6d-iX-iCF"/>
+                    <navigationItem key="navigationItem" title="Hedgehog Tech" largeTitleDisplayMode="always" id="u6d-iX-iCF">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="FSs-Zr-xWS"/>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iLQ-eh-wtR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="980" y="14.928909952606634"/>
+            <point key="canvasLocation" x="1909.2307692307691" y="14.928909952606634"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qmp-bz-TvU">
+            <objects>
+                <viewController id="YO3-Pg-NMb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WfO-ha-YDN">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2lX-W3-bS0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TE0-l5-aHX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="viP-mh-3oO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2838" y="15"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="yLO-YV-gg9">
+        <scene sceneID="kW1-J6-bmS">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EQe-KW-1PH" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZQE-5w-KCt" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TxG-My-Q27">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0uq-ta-jp5">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="sMN-L9-c01" kind="relationship" relationship="rootViewController" id="kIf-jj-PyE"/>
+                        <segue destination="sMN-L9-c01" kind="relationship" relationship="rootViewController" id="hvY-R3-WJ3"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1Jf-KN-QFR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7bb-mY-1oI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="50.769230769230766" y="14.928909952606634"/>
+            <point key="canvasLocation" x="980" y="14.928909952606634"/>
         </scene>
     </scenes>
     <resources>
